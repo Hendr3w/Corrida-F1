@@ -1,0 +1,59 @@
+.car1{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 1125px;
+    left: 150px;
+    background-image: url('images/1.png');
+    background-repeat: no-repeat;
+
+}
+
+.car2{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 1300px;
+    left: 150px;
+    background-image: url('images/2.png');
+    background-repeat: no-repeat;
+
+}
+
+.car3{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 950px;
+    left: 150px;
+    background-image: url('images/3.png');
+    background-repeat: no-repeat;
+
+}
+
+.car4{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 775px;
+    left: 150px;
+    background-image: url('images/4.png');
+    background-repeat: no-repeat;
+
+}
+
+.car5{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 1475px;
+    left: 150px;
+    background-image: url('images/5.png');
+    background-repeat: no-repeat;
+
+}
