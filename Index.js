@@ -1,18 +1,26 @@
-let startButton = document.getElementById("btnStart")
+document.addEventListener("DOMContentLoaded", function() {
+    const startButton = document.getElementById("btnStart");
+    const cars = document.querySelectorAll('.cars img');
+    const trackWidth = document.querySelector('.track').offsetWidth;
+    startButton.addEventListener("click", function(){
 
-startButton.addEventListener("click", function() {
-    startRace(); // Chama a função startRace() quando o botão é clicado
+        cars.forEach(car => {
+            let position = 0;
+            
+            const interval = setInterval(() => {
+                let speed = Math.random() * 5 + 1;
+                position += speed;
+                car.style.transform = `translateX(${position}px)`;
+            
+                if(position + 275>= trackWidth) {
+                    clearInterval(interval);
+                    position = 0;
+                    alert(`O vencedor é o ${car.id}`)
+                    reset();
+                    
+                }
+            }, 20);
+        });
+    });
+
 });
-
-function startRace(){
-    console.log("Deu")
-    let position = 0; 
-    const speed = Math.random() * 5 + 1;
-    const interval = setInterval(() => {
-        position += speed;
-        car1.style.left
-    }
-    )
-    
-
-}
