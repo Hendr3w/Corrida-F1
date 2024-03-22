@@ -8,18 +8,31 @@
     <script src="Index.js"></script>  
 </head>
 <body>
+    <div class="saldo">
+        <h2>Saldo: R$ <span id="saldo">100</span></h2>
+    </div>
+    <div class= "bet" id="bet">
+       
+        <input type="number" id="aposta" placeholder="Valor da Aposta">
+        <select id="carro">
+            <option value="car1">Carro 1</option>
+            <option value="car2">Carro 2</option>
+            <option value="car3">Carro 3</option>
+            <option value="car4">Carro 4</option>
+            <option value="car5">Carro 5</option>
+        </select>
+    </div>
     
     <div class="track">
         <div class="cars">
+            <img src='images/1.png' id="car1"/>
             <img src='images/2.png' id="car2"/>
             <img src='images/3.png' id="car3"/>
-            <img src='images/1.png' id="car1"/>
             <img src='images/4.png' id="car4"/>
             <img src='images/5.png' id="car5"/>
         </div>    
     </div>
     <button class="startButton" id="btnStart" >Start</button>
-
 
 </body>
 </html>
