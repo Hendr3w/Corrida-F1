@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 car.style.transform = `translateX(${position}px)`;
                 
         
-                if (position >= trackWidth - 320) {
+                if (position >= trackWidth - 290) {
                     clearInterval(interval);
                     const vencedor = car.id;
                     alert(`O vencedor é o ${vencedor}`);
